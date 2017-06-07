@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="311.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Edit.EditViewController">
+   <children>
+      <HBox prefHeight="48.0" prefWidth="311.0">
+         <children>
+            <ImageView fitHeight="36.0" fitWidth="34.0" onMouseClicked="#imageClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@back.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label fx:id="title" alignment="CENTER" prefHeight="48.0" prefWidth="225.0" text="Chỉnh Sửa Địa Chỉ" textFill="RED">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label fx:id="province" onMouseClicked="#provinceClick" prefHeight="30.0" prefWidth="305.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" />
+         </VBox.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="district" onMouseClicked="#districtClick" prefHeight="30.0" prefWidth="305.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" />
+         </VBox.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="ward" onMouseClicked="#wardClick" prefHeight="30.0" prefWidth="305.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" />
+         </VBox.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <TextField fx:id="address" prefHeight="30.0" prefWidth="300.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" />
+         </VBox.margin>
+      </TextField>
+      <RadioButton fx:id="buttonDefault" mnemonicParsing="false" prefHeight="30.0" prefWidth="305.0" text="Đặt làm mặc định">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" left="3.0" top="5.0" />
+         </VBox.margin>
+      </RadioButton>
+      <Label prefHeight="60.0" prefWidth="305.0" text="Hãy chắc chắn rằng địa chỉ này chính xác để&#10; bạn có thể giao/nhận hàng đúng thời hạn" textFill="#9a9595">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" />
+         </VBox.margin>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonEdit" mnemonicParsing="false" onMouseClicked="#clickEdit" prefHeight="30.0" prefWidth="244.0" text="Sửa" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="33.5" top="180.0" />
+         </VBox.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="5.0" />
+   </padding>
+</VBox>

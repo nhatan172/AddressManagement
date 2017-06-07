@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="111.0" prefWidth="309.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.UnitController">
+   <children>
+      <VBox prefHeight="111.0" prefWidth="246.0">
+         <children>
+            <Label fx:id="Addr" prefHeight="24.0" prefWidth="220.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="3.0" left="5.0" top="3.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="Ward" prefHeight="24.0" prefWidth="220.0" textFill="#6e6767">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="3.0" left="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="District" prefHeight="24.0" prefWidth="220.0" textFill="#6e6767">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="3.0" left="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="Province" prefHeight="24.0" prefWidth="220.0" textFill="#6e6767">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="3.0" left="5.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </VBox>
+      <VBox prefHeight="111.0" prefWidth="63.0">
+         <children>
+            <Text fx:id="Status" strokeType="OUTSIDE" strokeWidth="0.0" text="[Mặc định]" textAlignment="CENTER" wrappingWidth="63.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Text>
+            <Text fx:id="ButtonOpts" fill="RED" onMouseClicked="#optionEvent" strokeType="OUTSIDE" strokeWidth="0.0" text="..." textAlignment="CENTER" wrappingWidth="63.0">
+               <font>
+                  <Font size="47.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets left="1.0" right="1.0" />
+   </padding>
+</HBox>

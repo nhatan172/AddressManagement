@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox fx:id="hbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Search.AddressUnitController">
+   <children>
+      <Label fx:id="label" prefHeight="30.0" prefWidth="250.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label fx:id="label2" alignment="CENTER" onMouseClicked="#ClickChoose" onMouseEntered="#EnteredChooseSide" onMouseExited="#ExitedChooseSide" prefHeight="30.0" prefWidth="30.0" text="&gt;" textFill="RED">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</HBox>

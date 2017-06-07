@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vbox" maxHeight="500.0" maxWidth="311.0" minHeight="500.0" minWidth="311.0" prefHeight="500.0" prefWidth="311.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.MainViewController">
+   <children>
+      <Label fx:id="Title" alignment="CENTER" prefHeight="48.0" prefWidth="311.0" text="Địa Chỉ" textAlignment="CENTER" textFill="RED">
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="scrollP" hbarPolicy="NEVER" prefHeight="409.0" prefWidth="311.0" vbarPolicy="NEVER">
+         <content>
+            <VBox fx:id="AddrShow" prefHeight="409.0" prefWidth="300.0" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="ButtonAdd" mnemonicParsing="false" onMouseClicked="#themDiaChi" prefHeight="30.0" prefWidth="244.0" text="Thêm địa chỉ mới" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="33.5" top="3.0" />
+         </VBox.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</VBox>
